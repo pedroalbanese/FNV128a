@@ -22,8 +22,8 @@ func main() {
 	flag.Parse()
 
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "FNV1a Copyright (c) 2020-2023 ALBANESE Lab")
-		fmt.Fprintln(os.Stderr, "Bob Jenkins Recursive Hasher written in Go\n")
+		fmt.Fprintln(os.Stderr, "FNV1a Copyright (c) 2020-2023 ALBANESE Research Lab")
+		fmt.Fprintln(os.Stderr, "A Non-Cryptographic Recursive Hasher written in Go\n")
 		fmt.Fprintln(os.Stderr, "Usage of", os.Args[0]+":")
 		fmt.Fprintf(os.Stderr, "%s [-c <hash.fnv>] [-r] <file.ext>\n", os.Args[0])
 		flag.PrintDefaults()

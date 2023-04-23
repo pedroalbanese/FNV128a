@@ -32,7 +32,7 @@ func main() {
 
 	Files := strings.Join(flag.Args(), " ")
 
-	if Files == "-" {
+	if Files == "-" || Files == "" {
 		var h hash.Hash
 		h = NewFNV128a()
 		io.Copy(h, os.Stdin)
